@@ -1,3 +1,13 @@
+# Package dplyr
+# filter()
+# select(), everything()
+# mutate(), rename(), if_else()
+# arrange(), desc()
+# unique(), na.omit()
+# scale(), cut(), as.Date(), strptime(),
+# :, seq(), rep()
+# sample(), runif(), rnorm()
+
 idx <- c(1, 2, 3)
 idx <- 1:3
 idx <- seq(from=1, to=3, by=1)

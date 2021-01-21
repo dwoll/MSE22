@@ -14,7 +14,8 @@ head(datSub)
 
 datSub %>%
   group_by(Seite) %>%
-  summarise(M=mean(observed))
+  summarise(M=mean(observed),
+            SD=sd(observed))
 
 library(ggplot2)
 ggplot(datSub, aes(x=Seite, y=observed)) +
@@ -29,6 +30,7 @@ ggplot(datSub, aes(x=Groesse, y=Gewicht, color=haveLAG)) +
   facet_grid(Seite ~ .)
 
 fit <- lm(observed ~ GD1 + Seite + haveLAG, data=datSub)
+fit
 summary(fit)
 
 dim(dat)

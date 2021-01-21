@@ -1,9 +1,14 @@
 # getwd(), setwd()
-# ?⟨function⟩, ??⟨word⟩, help(), help.start(), example()
-# ?Reserved, <-, =
+# ?⟨function
+# ??⟨word
+# help()
+# example()
+# ?Reserved,
+# <-, =
 # print()
-# ls(), rm()
+# ls()
+# rm()
 # ?Arithmetic
 # round(⟨number⟩, digits=⟨digits⟩)
 # exp(), factorial()
-# TRUE, FALSE, !, ==, !=, <, >, <=, >=, |, &, xor()
+# TRUE, FALSE, !, ==, !=, <, >, <=, >=, |, &
