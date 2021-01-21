@@ -1,0 +1,11 @@
+# install.packages("⟨package name⟩")
+# installed.packages(),
+# .libPaths()
+# update.packages()
+# library(⟨package name⟩)
+# sessionInfo()
+# help(package="⟨package name⟩")
+# data()
+# vignette(package="⟨package name⟩)
+# vignette()
+# citation("⟨package name⟩")
