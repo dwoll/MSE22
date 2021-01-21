@@ -8,23 +8,11 @@
 # :, seq(), rep()
 # sample(), runif(), rnorm()
 
-idx <- c(1, 2, 3)
-idx <- 1:3
-idx <- seq(from=1, to=3, by=1)
-dat[idx, ]
-dat[1:3, ]
-
-dat[1:3, 1:2]
-names(dat)
-dat[1:3, c("Alter", "metric", "observed")]
-
-dat[ , "Seite"]
-idxLog <- dat$Seite == "left"
-datLeft <- dat[idxLog, ]
-
 library(dplyr)
+
 datLeft <- dat %>%
     filter(Seite == "left",
+           metric == "DMEAN",
            Alter > 65) %>%
     select(Alter, Seite, metric, structure, observed)
 
@@ -45,9 +33,9 @@ dat %>%
 
 dat %>%
     filter((Alter > 99) |
-               (Alter < 18) |
-               (BMI > 50)  |
-               (BMI < 10))
+           (Alter < 18) |
+           (BMI > 50)   |
+           (BMI < 10))
 
 min(dat$Alter)
 max(dat$Alter)
